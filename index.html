@@ -353,6 +353,39 @@
             border-bottom: none;
         }
         
+        /* Rewards Section */
+        .rewards-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 2rem;
+            margin-top: 2rem;
+        }
+        
+        .reward-card {
+            background-color: var(--surface);
+            border: 1px solid var(--border);
+            border-radius: 1rem;
+            padding: 2rem;
+            transition: all 0.3s ease;
+        }
+        
+        .reward-card:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05);
+        }
+        
+        .reward-card h3 {
+            font-size: 1.25rem;
+            font-weight: bold;
+            margin-bottom: 1rem;
+            color: var(--primary-color);
+        }
+        
+        .reward-card p {
+            color: var(--text-secondary);
+            line-height: 1.6;
+        }
+        
         /* Footer */
         footer {
             background-color: var(--surface);
@@ -394,6 +427,10 @@
             
             .comparison-table {
                 overflow-x: auto;
+            }
+            
+            .rewards-grid {
+                grid-template-columns: 1fr;
             }
         }
         
@@ -538,30 +575,30 @@
 
         <section id="rewards" class="mt-4">
             <h2 class="section-title">Understanding Crypto Card Rewards</h2>
-            <div class="cards-grid">
-                <div class="card">
-                    <h3 class="card-title">Crypto Cashback</h3>
-                    <p class="card-provider">Earn cryptocurrency rewards on every purchase. Rates typically range from 1% to 8%, with higher rates often requiring staking or loyalty program participation.</p>
+            <div class="rewards-grid">
+                <div class="reward-card">
+                    <h3>Crypto Cashback</h3>
+                    <p>Earn cryptocurrency rewards on every purchase. Rates typically range from 1% to 8%, with higher rates often requiring staking or loyalty program participation.</p>
                 </div>
-                <div class="card">
-                    <h3 class="card-title">Staking Benefits</h3>
-                    <p class="card-provider">Many cards offer enhanced rewards when you stake their native cryptocurrency. This can include higher cashback rates, rebates, and additional perks.</p>
+                <div class="reward-card">
+                    <h3>Staking Benefits</h3>
+                    <p>Many cards offer enhanced rewards when you stake their native cryptocurrency. This can include higher cashback rates, rebates, and additional perks.</p>
                 </div>
-                <div class="card">
-                    <h3 class="card-title">Travel Perks</h3>
-                    <p class="card-provider">Premium crypto cards often include travel benefits like airport lounge access, no foreign transaction fees, and travel insurance coverage.</p>
+                <div class="reward-card">
+                    <h3>Travel Perks</h3>
+                    <p>Premium crypto cards often include travel benefits like airport lounge access, no foreign transaction fees, and travel insurance coverage.</p>
                 </div>
-                <div class="card">
-                    <h3 class="card-title">Subscription Rebates</h3>
-                    <p class="card-provider">Some cards offer rebates on popular subscriptions like Netflix, Spotify, and Amazon Prime, typically paid in cryptocurrency.</p>
+                <div class="reward-card">
+                    <h3>Subscription Rebates</h3>
+                    <p>Some cards offer rebates on popular subscriptions like Netflix, Spotify, and Amazon Prime, typically paid in cryptocurrency.</p>
                 </div>
-                <div class="card">
-                    <h3 class="card-title">Referral Rewards</h3>
-                    <p class="card-provider">Earn additional crypto rewards by referring friends and family to sign up for their own crypto card.</p>
+                <div class="reward-card">
+                    <h3>Referral Rewards</h3>
+                    <p>Earn additional crypto rewards by referring friends and family to sign up for their own crypto card.</p>
                 </div>
-                <div class="card">
-                    <h3 class="card-title">Special Promotions</h3>
-                    <p class="card-provider">Look out for limited-time promotions offering bonus rewards, increased cashback rates, or special perks for card usage.</p>
+                <div class="reward-card">
+                    <h3>Special Promotions</h3>
+                    <p>Look out for limited-time promotions offering bonus rewards, increased cashback rates, or special perks for card usage.</p>
                 </div>
             </div>
         </section>
